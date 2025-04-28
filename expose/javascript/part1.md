@@ -32,4 +32,6 @@ It throws an error because the behavior is not defined for the else condition wh
    
 7. (Outputs an error message, does not print anything)
    Cannot assign to "result" because it is a constant
+
+   Since we used const for result, it prevents reassignment of its value to 0 and when we try to update it to the sum in the next line, it does not let us do that because we cannot change the value of a constant. Since we cannot do this, it does not execute the rest of the code and throws an error and nothing is printed. 
    
