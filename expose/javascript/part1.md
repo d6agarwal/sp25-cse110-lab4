@@ -6,7 +6,8 @@
    
 4. values added: 20
    
-5. ReferenceError: result is not defined
+5. (Outputs an error message, does not print anything)
+   ReferenceError: result is not defined
     at sumValues (<anonymous>:14:33)
     at <anonymous>:17:1
     at mn (<anonymous>:16:5455)
@@ -22,3 +23,13 @@ message
 
 
 It throws an error because the behavior is not defined for the else condition where it uses the result variable but that variable was decalred inside a different block of code and its scope was restricted to that block only, not the entire function. That is why in the else condition, the result variable did not exist anymore and it threw an error. 
+
+
+6. (Outputs an error message, does not print anything)
+   Cannot assign to "result" because it is a constant
+
+   Since we used const for result, it prevents reassignment of its value to 0 and when we try to update it to the sum in the next line, it does not let us do that because we cannot change the value of a constant. Since we cannot do this, it does not execute the rest of the code and throws an error and nothing is printed. 
+   
+7. (Outputs an error message, does not print anything)
+   Cannot assign to "result" because it is a constant
+   
