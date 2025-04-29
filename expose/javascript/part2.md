@@ -34,5 +34,9 @@ It outputs an error message because i is initialized as a block-scoped variable 
 It outputs an error message because discountedPrice is initialized as a block-scoped variable and line 13 tries to access it outside the code block and its value does not exist there which is why it throws an error. 
 
 7. 150
-   The for loop goes over every value in the array and applies a 50% discount on the last element (300) and that is how we get 150. It did not throw an error here like in the last 2 cases because it is still within the code block as the one in which it was initialized so it is not out of scope. 
+   The for loop goes over every value in the array and applies a 50% discount on the last element (300) and that is how we get 150. It did not throw an error here like in the last 2 cases because it is still within the code block as the one in which it was initialized so it is not out of scope.
+
+
+8. [50, 100, 150]
+The for loop goes over every value in the array and adds the updated values (after the discount) to the discounted array. It is still within the code block as the one in which it was initialized so it is not out of scope and does not throw an error. That is why it prints a value. 
 
