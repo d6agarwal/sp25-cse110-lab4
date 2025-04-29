@@ -40,3 +40,10 @@ It outputs an error message because discountedPrice is initialized as a block-sc
 8. [50, 100, 150]
 The for loop goes over every value in the array and adds the updated values (after the discount) to the discounted array. It is still within the code block as the one in which it was initialized so it is not out of scope and does not throw an error. That is why it prints a value. 
 
+
+9. ReferenceError: i is not defined
+    at discountPrices (<anonymous>:20:15)
+    at <anonymous>:24:13
+    at mn (<anonymous>:16:5455)
+
+   We get an error saying i is not defined because i is initialized as a block-scoped variable and is in the for loop. We try to access i outside the block where it does not exist outside the for loop and that is why it says that i is not defined because it is not in the scope.  
