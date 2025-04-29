@@ -24,3 +24,12 @@ message
 
 (Outputs an error message, does not print anything) 
 It outputs an error message because i is initialized as a block-scoped variable and line 12 tries to access it outside the code block and its value does not exist there which is why it throws an error. 
+
+6. ReferenceError: discountedPrice is not defined
+    at discountPrices (<anonymous>:21:15)
+    at <anonymous>:25:1
+    at mn (<anonymous>:16:5455)
+
+(Outputs an error message, does not print anything) 
+It outputs an error message because discountedPrice is initialized as a block-scoped variable and line 13 tries to access it outside the code block and its value does not exist there which is why it throws an error. 
+
