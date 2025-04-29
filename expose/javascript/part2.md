@@ -62,3 +62,7 @@ The for loop goes over every value in the array and adds the updated values (aft
     C) student.greeting()
     D) student['Favorite Teacher'].name
     E) student.courseLoad[0]
+
+
+
+15. Strict equality operator (===) checks the equality without type conversion whereas == does type conversion and then checks for equality. 
