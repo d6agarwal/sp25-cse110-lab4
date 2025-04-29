@@ -46,4 +46,9 @@ The for loop goes over every value in the array and adds the updated values (aft
     at <anonymous>:24:13
     at mn (<anonymous>:16:5455)
 
-   We get an error saying i is not defined because i is initialized as a block-scoped variable and is in the for loop. We try to access i outside the block where it does not exist outside the for loop and that is why it says that i is not defined because it is not in the scope.  
+   We get an error saying i is not defined because i is initialized as a block-scoped variable and is in the for loop. We try to access i outside the block where it does not exist outside the for loop and that is why it says that i is not defined because it is not in the scope.
+
+
+
+10. 3
+    Since on line 4 we assign length to be the number of elements in the prices array, it sees that there are 3 elements in the array and just prints that. It does not run into any scoping errors because it is still in the block-scope where it was initialized. It was declared at the top of the function. 
