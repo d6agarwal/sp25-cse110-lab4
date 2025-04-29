@@ -52,3 +52,6 @@ The for loop goes over every value in the array and adds the updated values (aft
 
 10. 3
     Since on line 4 we assign length to be the number of elements in the prices array, it sees that there are 3 elements in the array and just prints that. It does not run into any scoping errors because it is still in the block-scope where it was initialized. It was declared at the top of the function. 
+
+11. [50, 100, 150]
+    This is because the discounted array is updated every time when we add the updated value (price after discount of 50%) to the array. It is still in the block-scope as it was declared/initialised in so it does not have any scoping problems either. It was declared at the top of the function. 
