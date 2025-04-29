@@ -82,4 +82,9 @@ The for loop goes over every value in the array and adds the updated values (aft
     F) true    (since Boolean(2) also evaluates to true, it basically becomes a check for true === true which is true)
 
 
-15. Strict equality operator (===) checks the equality without type conversion whereas == does type conversion and then checks for equality. 
+15. Strict equality operator (===) checks the equality without type conversion whereas == does type conversion and then checks for equality.
+    
+16. Answered in part2-question16.js
+    
+17. [2, 4, 6]
+    We get this as the result because the doSomething function is passed as callback in the modifyArray function where we are multiplying every element of the original array by 2 (by looping through all the elements of the array) before adding the updated elements to the new array. This new updated array is then returned. 
