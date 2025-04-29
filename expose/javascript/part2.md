@@ -63,6 +63,23 @@ The for loop goes over every value in the array and adds the updated values (aft
     D) student['Favorite Teacher'].name
     E) student.courseLoad[0]
 
+13. A) '32'   (concatenates 3 and 2 as a string) 
+    B) 1      (concatenation as a string does not work for subtraction so it forces numeric conversion of 3 and does 3 - 2 = 1)
+    C) 3      (the value of null is 0 so it does 3 + 0 = 3)
+    D) '3null' ('3' is a string here and it treats null as a string too and just concetenates them together)
+    E) 4        (The value of true is 1 so it does 1 + 3 = 4)
+    F) O        (The values of both false and null are 0 so it does 0 + 0 = 0)
+    G) '3undefined' ('3' is a string here and it concatenates it with undefined which is treats as a string)
+    H) NaN      (The value of undefined does not exist so it is not able to subtracted from 3 it just converts it to NaN. Undefined just becomes NaN.)
+    
+    
+    
+14. A) true    (converts '2' to a number and then compares 2 > 1 which evaluates to true)
+    B) false   (since both of them are strings, it does a lexicographical comparsion based on the unicodes and since 2's ASCII value is 50 and 1's (from 12) ASCII value is 49, it compares 50 and 49 and sinc 50 is bigger, it thinks that '2' is bigger)
+    C) true    (since one of them is a string, it gets converted to a number type and then the comparsion of 2 == 2 takes place which is true)
+    D) false   (type conversion does not take place here even though one of them is a string and other is a number type because we are using the '===' operator which does comparisons without changing the type. 
+    E) false   (this evaluates to false because we know from the reading documentation that the value of true is 1, not 2)
+    F) true    (since Boolean(2) also evaluates to true, it basically becomes a check for true === true which is true)
 
 
 15. Strict equality operator (===) checks the equality without type conversion whereas == does type conversion and then checks for equality. 
